@@ -30,6 +30,7 @@
     --footer-text: #e0e0e0;
     --border-color: #333;
     --secondary-text: #b0b0b0;
+    --color: #fff;
 }
 
 /* Apply variables */
@@ -208,4 +209,9 @@ input:checked + .slider:before {
     .theme-switch-wrapper {
         margin-right: 20px;
     }
+}
+
+.coursework h4 {
+    
+    color: var(--color);
 }
