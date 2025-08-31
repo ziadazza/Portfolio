@@ -230,7 +230,6 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 30px;
-    
 }
 
 .project-card {
@@ -476,6 +475,10 @@ footer {
     .project-card,
     .skill-category {
         padding: 15px;
+    }
+
+    .nav-links a {
+        color: #fff;
     }
 }
 

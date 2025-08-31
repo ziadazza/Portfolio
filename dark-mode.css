@@ -13,6 +13,7 @@
     --footer-text: #fff;
     --border-color: #eee;
     --secondary-text: #666;
+    --color: #000;
 }
 
 [data-theme="dark"] {
@@ -140,11 +141,11 @@ footer {
     width: 16px;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: var(--primary-color);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(26px);
 }
 
@@ -205,13 +206,23 @@ input:checked + .slider:before {
     .nav-links {
         background-color: var(--card-background);
     }
-    
+
     .theme-switch-wrapper {
         margin-right: 20px;
     }
+
 }
 
 .coursework h4 {
-    
+
     color: var(--color);
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .nav-links a {
+        color: var(--color);
+
+    }
 }
