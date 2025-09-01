@@ -166,7 +166,7 @@ nav {
     font-size: 2.2rem;
     margin-bottom: 50px;
     position: relative;
-    color: #333;
+    color: white ;
 }
 
 .section-title::after {
@@ -560,5 +560,179 @@ margin-top: 50px;
 
     to {
         box-shadow: 0 0 30px #ff0099, 0 0 60px #ff0099, 0 0 90px #ff0099;
+    }
+}
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--card-background);
+    color: var(--text-color);
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 6px var(--primary-color);
+}
+
+.contact-form select option {
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+.contact-form .btn {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: var(--primary-color-hover);
+}
+
+/* Info Box */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 80%;
+}
+
+.info-box i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.info-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.info-box p {
+    color: var(--secondary-text);
+    font-size: 0.95rem;
+    word-wrap: break-word;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* 🌍 Responsive Design */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 50px 15px;
+    }
+
+    .contact-wrapper {
+        gap: 25px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .contact-form .btn {
+        font-size: 1rem;
+        padding: 12px;
+        border-radius: 25px;
+    }
+
+    .info-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .info-box i {
+        font-size: 1.3rem;
+    }
+
+    .info-box h4 {
+        font-size: 1rem;
+    }
+
+    .info-box p {
+        font-size: 0.9rem;
     }
 }
