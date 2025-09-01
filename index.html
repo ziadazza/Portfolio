@@ -208,22 +208,27 @@
     <h2 class="section-title">Let's work <span>together</span></h2>
     <div class="contact-wrapper">
       
-      <!-- Left Side: Form -->
-      <form class="contact-form">
-        <div class="form-row">
-          <input type="text" placeholder="First Name" required>
-          <input type="text" placeholder="Last Name" required>
-        </div>
-        <input type="email" placeholder="Email Address" required>
-        <input type="text" placeholder="Phone (Optional)">
-      <select name="service"><option value="">Select a service</option><option value="frontend">Frontend Development</option><option value="backend">Backend Development</option><option value="fullstack">Full-Stack Development</option></select>
-        <textarea rows="5" placeholder="Type your message here..." required></textarea>
-        <button type="submit" class="btn">
-          Send Message <i class="fas fa-paper-plane"></i>
-        </button>
-      </form>
+<form id="contact-form"  class="contact-form">
+  <div class="form-row">
+    <input type="text" name="firstname" placeholder="First Name" required>
+    <input type="text" name="lastname" placeholder="Last Name" required>
+  </div>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="text" name="phone" placeholder="Phone (Optional)">
+  <select name="service">
+    <option value="">Select a service</option>
+    <option value="frontend">Frontend Development</option>
+    <option value="backend">Backend Development</option>
+    <option value="fullstack">Full-Stack Development</option>
+  </select>
+  <textarea name="message" rows="5" placeholder="Type your message here..." required></textarea>
+  <button type="submit" class="btn">
+    Send Message <i class="fas fa-paper-plane"></i>
+  </button>
+  <p id="status"></p>
+</form>
 
-      <!-- Right Side: Info -->
+
       <div class="contact-info">
         <div class="info-box">
           <i class="fas fa-phone"></i>
@@ -255,6 +260,9 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="js.js"></script>
+
 </body>
 
 </html>
